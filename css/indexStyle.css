@@ -1,0 +1,396 @@
+body {
+    font-family: "Montserrat", "sans-serif";
+    overflow-x: hidden;
+}
+
+
+/*--loader==*/
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+}
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 300px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+
+/*--end loader==*/
+
+
+/* navbar */
+
+.navchangecol {
+    background-color: transparent;
+}
+
+.navbar {
+    border-bottom: 1px solid #888;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-nav .icon {
+    position: relative;
+    top: 0;
+}
+
+.navbar-nav .icon:before {
+    content: "";
+    width: 1px;
+    height: 42px;
+    background-color: #888;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+.navbar-nav .icon a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+
+/* slider */
+
+.slider {
+    position: relative
+}
+
+.layer {
+    background-color: rgba(47, 47, 48, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* owlcarousel */
+
+.owl-carousel {
+    width: 100%;
+}
+
+.owl-carousel img {
+    height: 600px;
+    width: 100%;
+}
+
+.owl-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+.owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+
+/* style section info */
+
+.info {
+    padding: 400px;
+    margin: 80px 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.title {
+    color: #999;
+}
+
+.title h6 {
+    color: #000;
+}
+
+.title .typed-words {
+    color: #09c;
+}
+
+
+/*=======================*/
+
+
+/* style section mission */
+
+.mission {
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+}
+
+.mission .right-content {
+    margin: 150px auto;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    color: #000;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+/*================================*/
+
+
+/* style section our team */
+
+.team .founder {
+    position: relative;
+}
+
+.team .img-layer {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    bottom: -3px;
+    left: 15px;
+    text-align: center;
+    background-color: rgba(0, 195, 218, 0.9);
+    color: #fff;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.team:hover .img-layer {
+    opacity: 1;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+}
+
+.img-layer .team-info {
+    text-align: left;
+    margin-top: 125px;
+    width: 100%;
+}
+
+.team .social {
+    text-align: left;
+    padding: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 6px;
+}
+
+
+/*===============================================*/
+
+
+/* style section what we do */
+
+.do {
+    height: 600px;
+    background-image: url(../image/bg-image-26.jpg);
+    background-size: 100% 100%;
+}
+
+.layer-do {
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shape {
+    margin-top: 100px;
+}
+
+animated-icon.white svg,
+.animated-icon.white svg * {
+    stroke: #ddd;
+}
+
+.animated-icon {
+    width: 55px;
+    margin: auto;
+}
+
+.shape h6 {
+    color: #eee;
+    margin: 20px 0;
+}
+
+.scorow {
+    margin-top: 100px;
+}
+
+.scorow .title h2 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.check-list>li {
+    padding: 6px 0;
+    color: #fff;
+}
+
+.check-list li:before {
+    font-family: 'hody-icons' !important;
+    content: "\e024";
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+
+/*=============================*/
+
+
+/* style section our work */
+
+.our-work .nav-pills {
+    width: 40%;
+    margin: 30px auto;
+    border-bottom: none;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.nav-pills .nav-link {
+    color: #666;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #00c3da;
+    border: 1px solid #00c3da;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.our-work h2 {
+    font-weight: bold;
+    position: relative;
+}
+
+.our-work h2:before {
+    content: "";
+    width: 31px;
+    height: 1px;
+    position: absolute;
+    bottom: -17px;
+    left: 49%;
+    background-color: #000;
+}
